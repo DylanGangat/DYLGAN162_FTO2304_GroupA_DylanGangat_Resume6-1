@@ -33,7 +33,7 @@
     </header>
 
     <a id="back-to-top" href="#top">
-        <button >
+        <button>
             &uarr;
         </button>
     </a>
@@ -131,6 +131,30 @@
             <button>Facebook</button>
             <button>Glassdoor</button>
         </p>
+
+        <form action="https://formsubmit.co/5bfe748e302b0a4d41b8f8acf3670287" method="POST">
+            <div>
+                <label for="question">Choose a question:</label>
+                <select name="question" id="question" required>
+                    <option value="ask_a_question">Ask a question?</option>
+                    <option value="want_to_hire_me">Want to hire me?</option>
+                    <option value="setup_a_meeting">Set up a meeting?</option>
+                </select>
+            </div>
+            <div>
+                <label for="name">Name:</label>
+                <input type="name" name="name" id="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div>
+                <label for="textarea">More Info:</label>
+                <textarea name="info" id="textarea" cols="20" rows="10">Write something in here...</textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
     </footer>
 </body>
 
