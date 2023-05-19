@@ -9,7 +9,7 @@ body {
 
 .responsive-image > * {
   display: block;
-  max-width: 25rem;
+  max-width: 100%;
   border-radius: 10%;
   margin-inline: auto;
 }
@@ -27,7 +27,6 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-
   background-image: url("/image/banner-image.jpg");
   background-repeat: no-repeat;
   background-color: black;
@@ -47,6 +46,8 @@ body {
   color: white;
   position: relative;
   z-index: 2;
+  max-width: 30rem;
+  padding: 0 1rem;
 }
 
 .banner-content > * + * {
@@ -63,10 +64,9 @@ body {
 }
 
 .banner-content p {
- font-size: 1.5rem;
- max-width: 40ch;
+  font-size: 1.5rem;
+  max-width: 40ch;
 }
-
 
 /* ---- Back to top ---- */
 
