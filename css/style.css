@@ -5,6 +5,68 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin: 0;
 }
+/* === My own styles === */
+
+.responsive-image > * {
+  display: block;
+  max-width: 25rem;
+  border-radius: 10%;
+  margin-inline: auto;
+}
+
+.container {
+  max-width: 75rem;
+  margin-inline: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.banner {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-image: url("/image/banner-image.jpg");
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: center;
+  min-height: calc(100vh - 83.2px);
+}
+
+.banner .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.banner .banner-content {
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.banner-content > * + * {
+  margin-top: 1.5rem;
+}
+
+.banner picture {
+  display: block;
+}
+
+.banner-content h2 {
+  font-size: 4.5rem;
+  margin: 0;
+}
+
+.banner-content p {
+ font-size: 1.5rem;
+ max-width: 40ch;
+}
+
 
 /* ---- Back to top ---- */
 
@@ -31,10 +93,13 @@ body {
 /* ---- Nav --- */
 
 #navbar {
+  position: fixed;
+  top: 0;
+  padding: 2rem 0;
   background-color: rgb(23, 23, 23);
   color: white;
   text-align: center;
-  z-index: 1;
+  z-index: 999;
 }
 
 .nav-link {
@@ -130,5 +195,5 @@ form label {
 }
 
 form button {
-    align-self: center;
+  align-self: center;
 }

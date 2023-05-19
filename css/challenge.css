@@ -4,6 +4,7 @@
 */
 #back-to-top {
   position: fixed;
+  z-index: 999;
   bottom: 80px;
   right: 80px;
 }
@@ -12,6 +13,7 @@
 #navbar {
   position: sticky;
   top: 0;
+  
 }
 
 #header {
