@@ -13,7 +13,6 @@
 #navbar {
   position: sticky;
   top: 0;
-  
 }
 
 #header {
@@ -21,7 +20,10 @@
 }
 
 /* relatively position header image inside header element using CSS here */
-#header-image {
-  position: relative;
-  top: 100px;
+
+@media (min-width: 48em) {
+  #header-image {
+    position: relative;
+    top: 100px;
+  }
 }
